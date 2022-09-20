@@ -1,0 +1,63 @@
+{
+    "name": "michaelnabil230/laravel-weather",
+    "description": "This is my package laravel-weather",
+    "keywords": [
+        "MichaelNabil230",
+        "laravel",
+        "laravel-weather"
+    ],
+    "homepage": "https://github.com/michaelnabil230/laravel-weather",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Nabil",
+            "email": "michaelnabil926@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "spatie/laravel-package-tools": "^1.13.0",
+        "illuminate/contracts": "^9.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^6.0",
+        "nunomaduro/larastan": "^2.0.1",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichaelNabil230\\Weather\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MichaelNabil230\\Weather\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MichaelNabil230\\Weather\\WeatherServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

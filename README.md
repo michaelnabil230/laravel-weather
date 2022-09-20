@@ -59,7 +59,7 @@ Functions:
 | timezone            | String         | No           | UTC         |
 | pastDays            | Integer (0-2)  | No           | 0           |
 
-Hourly Parameter Definition:
+Hourly Functions:
 
 | **Variable**           | **Valid time**               | **Unit**               |
 |------------------------|------------------------------|------------------------|
@@ -101,7 +101,7 @@ Hourly Parameter Definition:
 | soilMoisture_27_81cm   | Instant                      | m³/m³                  |
 | allHourly              | -                            | -                      |
 
-Daily Parameter Definition:
+Daily Functions:
 
 | **Variable**               | **Unit**               |
 |----------------------------|------------------------|
@@ -120,11 +120,10 @@ Daily Parameter Definition:
 | shortwaveRadiationSum      | MJ/m²                  |
 | allDaily                   | -                      |
 
+WMO Weather interpretation codes (WW):
 
-| **WMO Weather interpretation codes (WW)** | ****                                             |
+| **Code**                                  | **Description**                                  |
 |-------------------------------------------|--------------------------------------------------|
-| code                                      | Description                                      |
-| ------                                    | -------                                          |
 | 0                                         | Clear sky                                        |
 | 1, 2, 3                                   | Mainly clear, partly cloudy, and overcast        |
 | 45, 48                                    | Fog and depositing rime fog                      |

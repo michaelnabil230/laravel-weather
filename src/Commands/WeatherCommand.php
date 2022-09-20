@@ -20,7 +20,7 @@ class WeatherCommand extends Command
         $longitude = (float) $this->argument('longitude');
 
         try {
-            $weather = Weather::location($latitude, $longitude)
+            $weather = (object) Weather::location($latitude, $longitude)
                 ->current()
                 ->get();
 

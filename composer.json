@@ -1,6 +1,6 @@
 {
     "name": "michaelnabil230/laravel-weather",
-    "description": "This is my package laravel-weather",
+    "description": "Package for get the weather data",
     "keywords": [
         "MichaelNabil230",
         "laravel",

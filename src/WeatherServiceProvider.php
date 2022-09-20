@@ -2,9 +2,9 @@
 
 namespace MichaelNabil230\Weather;
 
+use MichaelNabil230\Weather\Commands\WeatherCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MichaelNabil230\Weather\Commands\WeatherCommand;
 
 class WeatherServiceProvider extends PackageServiceProvider
 {

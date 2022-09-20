@@ -27,7 +27,7 @@ trait Daily
 
     public function apparentTemperatureMin(): self
     {
-        $this->withQuery('apparent_temperature_min');
+        $this->withQuery(['daily' => 'apparent_temperature_min']);
 
         return $this;
     }

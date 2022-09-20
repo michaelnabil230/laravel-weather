@@ -2,8 +2,8 @@
 
 namespace MichaelNabil230\Weather\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use MichaelNabil230\Weather\WeatherServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

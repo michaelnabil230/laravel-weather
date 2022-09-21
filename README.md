@@ -1,4 +1,4 @@
-# Package for get the weather data
+# 🌤 Open-Meteo Weather API
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/michaelnabil230/laravel-weather.svg?style=flat-square)](https://packagist.org/packages/michaelnabil230/laravel-weather)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/michaelnabil230/laravel-weather/run-tests?label=tests)](https://github.com/michaelnabil230/laravel-weather/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -69,9 +69,9 @@ Hourly Functions:
 | apparentTemperature    | Instant                      | °C (°F)                |
 | pressureMsl            | Instant                      | hPa                    |
 | cloudCover             | Instant                      | %                      |
-| cloudCover_low         | Instant                      | %                      |
-| cloudCover_mid         | Instant                      | %                      |
-| cloudCover_high        | Instant                      | %                      |
+| cloudCoverLow          | Instant                      | %                      |
+| cloudCoverMid          | Instant                      | %                      |
+| cloudCoverHigh         | Instant                      | %                      |
 | windSpeed_10m          | Instant                      | km/h (mph, m/s, knots) |
 | windSpeed_80m          | Instant                      | km/h (mph, m/s, knots) |
 | windSpeed_120m         | Instant                      | km/h (mph, m/s, knots) |

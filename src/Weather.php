@@ -105,8 +105,8 @@ class Weather
     public function date(DateTime $startDate, DateTime $endDate): self
     {
         $this->withQuery([
-            'start_date' => $startDate->format('yyyy-mm-dd'),
-            'end_date' => $endDate->format('yyyy-mm-dd'),
+            'start_date' => $startDate->format('Y-m-d'),
+            'end_date' => $endDate->format('Y-m-d'),
         ]);
 
         return $this;

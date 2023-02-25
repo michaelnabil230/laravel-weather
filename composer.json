@@ -1,33 +1,37 @@
 {
-    "name": "michaelnabil230/laravel-weather",
+    "name": "astrodog/laravel-weather",
     "description": "Package for get the weather data",
     "keywords": [
         "MichaelNabil230",
         "laravel",
         "laravel-weather"
     ],
-    "homepage": "https://github.com/michaelnabil230/laravel-weather",
+    "homepage": "https://github.com/jcmcclorey/laravel-weather",
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Nabil",
             "email": "46572405+michaelnabil230@users.noreply.github.com",
             "role": "Developer"
+        },
+        {
+            "name": "Joe McClorey",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.5",
-        "illuminate/contracts": "^9.0",
-        "spatie/laravel-package-tools": "^1.13.0"
+        "illuminate/contracts": "^10.0",
+        "spatie/laravel-package-tools": "^1.14.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
+        "laravel/pint": "^1.6",
         "nunomaduro/collision": "^6.0",
-        "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^7.0",
-        "pestphp/pest": "^1.21",
-        "pestphp/pest-plugin-laravel": "^1.1",
+        "nunomaduro/larastan": "^2.4",
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^1.22",
+        "pestphp/pest-plugin-laravel": "^1.4",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",

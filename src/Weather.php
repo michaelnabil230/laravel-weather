@@ -8,11 +8,12 @@ use Illuminate\Support\Facades\Http;
 use InvalidArgumentException;
 use MichaelNabil230\Weather\Constants\Daily;
 use MichaelNabil230\Weather\Constants\Hourly;
+use MichaelNabil230\Weather\Constants\Minutely15;
 use MichaelNabil230\Weather\Constants\Query;
 
 class Weather
 {
-    use Query, Daily, Hourly;
+    use Query, Daily, Hourly, Minutely15;
 
     public function __construct($latitude, $longitude)
     {

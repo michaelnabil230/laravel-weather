@@ -13,7 +13,7 @@ class WeatherTest extends TestCase
             ->get();
 
         $this->assertSame([30.0625, 31.25], [$weather->latitude, $weather->longitude]);
-        $this->assertObjectHasAttribute('current_weather', $weather);
+        $this->assertObjectHasProperty('current_weather', $weather);
     }
 
     public function test_weather_current_timezone()

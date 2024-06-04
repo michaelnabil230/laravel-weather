@@ -28,9 +28,9 @@ class WeatherCommand extends Command
         } catch (Exception $exception) {
             $this->error("Weather is failed because: {$exception->getMessage()}.");
 
-            return self::FAILURE;
+            return static::FAILURE;
         }
 
-        return self::SUCCESS;
+        return static::SUCCESS;
     }
 }

@@ -4,13 +4,14 @@ namespace MichaelNabil230\Weather\Constants;
 
 trait Query
 {
-    private array $query = [];
+    /**
+     * @var array<string, mixed>
+     */
+    protected array $query = [];
 
-    public function query(): array
-    {
-        return $this->query;
-    }
-
+    /**
+     * @param  array<string, mixed>  $query
+     */
     public function withQuery(array $query): self
     {
         $this->query = array_merge_recursive($this->query, $query);

@@ -5,6 +5,7 @@ namespace MichaelNabil230\Weather;
 use DateTime;
 use DateTimeZone;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;
 use MichaelNabil230\Weather\Constants\Daily;
 use MichaelNabil230\Weather\Constants\Hourly;
@@ -13,9 +14,9 @@ use MichaelNabil230\Weather\Constants\Query;
 
 class Weather
 {
-    use Query, Daily, Hourly, Minutely15;
+    use Query, Daily, Hourly, Macroable, Minutely15;
 
-    public function __construct($latitude, $longitude)
+    public function __construct(float $latitude, float $longitude)
     {
         $this->setLocation($latitude, $longitude);
         $this->setDefaultValues();
@@ -34,11 +35,11 @@ class Weather
     private function setDefaultValues(): void
     {
         $this
-            ->temperatureUnit(config('weather.temperature_unit', 'celsius'))
-            ->windSpeedUnit(config('weather.wind_speed_unit', 'kmh'))
-            ->precipitationUnit(config('weather.precipitation_unit', 'mm'))
-            ->timeFormat(config('weather.time_format', 'iso8601'))
-            ->timezone(config('weather.timezone', 'GMT'));
+            ->temperatureUnit(config()->string('weather.temperature_unit', 'celsius'))
+            ->windSpeedUnit(config()->string('weather.wind_speed_unit', 'kmh'))
+            ->precipitationUnit(config()->string('weather.precipitation_unit', 'mm'))
+            ->timeFormat(config()->string('weather.time_format', 'iso8601'))
+            ->timezone(config()->string('weather.timezone', 'GMT'));
     }
 
     public static function location(float $latitude, float $longitude): self
@@ -46,7 +47,7 @@ class Weather
         return new self($latitude, $longitude);
     }
 
-    public function get(): object|array
+    public function get(): ?object
     {
         return Http::get('https://api.open-meteo.com/v1/forecast', $this->query)
             ->object();

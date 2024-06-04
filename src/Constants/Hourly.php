@@ -172,6 +172,13 @@ trait Hourly
         return $this;
     }
 
+    public function precipitationProbability(): self
+    {
+        $this->withQuery(['hourly' => 'precipitation_probability']);
+
+        return $this;
+    }
+
     public function hourlyWeatherCode(): self
     {
         $this->withQuery(['hourly' => 'weathercode']);

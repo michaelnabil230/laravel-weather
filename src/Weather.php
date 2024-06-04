@@ -9,11 +9,12 @@ use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;
 use MichaelNabil230\Weather\Constants\Daily;
 use MichaelNabil230\Weather\Constants\Hourly;
+use MichaelNabil230\Weather\Constants\Minutely15;
 use MichaelNabil230\Weather\Constants\Query;
 
 class Weather
 {
-    use Daily, Hourly, Macroable, Query;
+    use Query, Daily, Hourly, Macroable, Minutely15;
 
     public function __construct(float $latitude, float $longitude)
     {

@@ -59,47 +59,74 @@ Functions:
 | timezone            | String         | No           | UTC         |
 | pastDays            | Integer (0-2)  | No           | 0           |
 
+15-minutely Functions:
+
+| **Variable**                 | **Valid time**            | **Unit**               |
+|------------------------------|---------------------------|------------------------|
+| temperature_2m_15min         | Instant                   | °C (°F)                |
+| relativeHumidity_2m_15min    | Instant                   | %                      |
+| dewPoint_2m_15min            | Instant                   | °C (°F)                |
+| apparentTemperature_15min    | Instant                   | °C (°F)                |
+| windSpeed_10m_15min          | Instant                   | km/h (mph, m/s, knots) |
+| windSpeed_80m_15min          | Instant                   | km/h (mph, m/s, knots) |
+| windDirection_10m_15min      | Instant                   | °                      |
+| windDirection_80m_15min      | Instant                   | °                      |
+| windGusts_10m_15min          | Preceding 15 minutes max  | km/h (mph, m/s)        |
+| shortwaveRadiation_15min     | Preceding 15 minutes mean | W/m²                   |
+| directRadiation_15min        | Preceding 15 minutes mean | W/m²                   |
+| directNormalIrradiance_15min | Preceding 15 minutes mean | W/m²                   |
+| diffuseRadiation_15min       | Preceding 15 minutes mean | W/mv²                  |
+| globalTiltedIrradiance_15min | Preceding 15 minutes mean | W/mv²                  |
+| sunshineDuration_15Min       | Preceding 15 minutes sum  | Seconds                |
+| precipitation_15min          | Preceding 15 minutes sum  | mm (inch)              |
+| snowfall_15min               | Preceding 15 minutes sum  | cm (inch)              |
+| rain_15min                   | Preceding 15 minutes sum  | mm (inch)              |
+| cape_15min                   | Instant                   | J/kg                   |
+| visibility_15min             | Instant                   | meters                 |
+| weatherCode_15min            | Instant                   | WMO code               |
+
 Hourly Functions:
 
-| **Variable**           | **Valid time**               | **Unit**               |
-|------------------------|------------------------------|------------------------|
-| temperature_2m         | Instant                      | °C (°F)                |
-| relativeHumidity_2m    | Instant                      | %                      |
-| dewPoint_2m            | Instant                      | °C (°F)                |
-| apparentTemperature    | Instant                      | °C (°F)                |
-| pressureMsl            | Instant                      | hPa                    |
-| cloudCover             | Instant                      | %                      |
-| cloudCoverLow          | Instant                      | %                      |
-| cloudCoverMid          | Instant                      | %                      |
-| cloudCoverHigh         | Instant                      | %                      |
-| windSpeed_10m          | Instant                      | km/h (mph, m/s, knots) |
-| windSpeed_80m          | Instant                      | km/h (mph, m/s, knots) |
-| windSpeed_120m         | Instant                      | km/h (mph, m/s, knots) |
-| windSpeed_180m         | Instant                      | km/h (mph, m/s, knots) |
-| windDirection_10m      | Instant                      | °                      |
-| windDirection_80m      | Instant                      | °                      |
-| windDirection_120m     | Instant                      | °                      |
-| windDirection_180m     | Instant                      | °                      |
-| windGusts_10m          | Preceding hour max           | km/h (mph, m/s)        |
-| shortwaveRadiation     | Preceding hour mean W/m²     |                        |
-| directRadiation        | Preceding hour mean          | W/m²                   |
-| diffuseRadiation       | Preceding hour mean          | W/mv²                  |
-| vaporPressureDeficit   | Instant                      | kPa                    |
-| evapotranspiration     | Preceding hour sum           | mm (inch)              |
-| precipitation          | Preceding hour sum           | mm (inch)              |
-| hourlyWeatherCode      | Instant                      | WMO code               |
-| snowHeight             | Instant                      | meters                 |
-| freezingLevelHeight    | Instant                      | meters                 |
-| soilTemperature_0cm    | Instant                      | °C (°F)                |
-| soilTemperature_6cm    | Instant                      | °C (°F)                |
-| soilTemperature_18cm   | Instant                      | °C (°F)                |
-| soilTemperature_54cm   | Instant                      | °C (°F)                |
-| soilMoisture_0_1cm     | Instant                      | m³/m³                  |
-| soilMoisture_1_3cm     | Instant                      | m³/m³                  |
-| soilMoisture_3_9cm     | Instant                      | m³/m³                  |
-| soilMoisture_9_27cm    | Instant                      | m³/m³                  |
-| soilMoisture_27_81cm   | Instant                      | m³/m³                  |
-| allHourly              | -                            | -                      |
+| **Variable**             | **Valid time**             | **Unit**               |
+|--------------------------|----------------------------|------------------------|
+| temperature_2m           | Instant                    | °C (°F)                |
+| relativeHumidity_2m      | Instant                    | %                      |
+| dewPoint_2m              | Instant                    | °C (°F)                |
+| apparentTemperature      | Instant                    | °C (°F)                |
+| pressureMsl              | Instant                    | hPa                    |
+| cloudCover               | Instant                    | %                      |
+| cloudCoverLow            | Instant                    | %                      |
+| cloudCoverMid            | Instant                    | %                      |
+| cloudCoverHigh           | Instant                    | %                      |
+| windSpeed_10m            | Instant                    | km/h (mph, m/s, knots) |
+| windSpeed_80m            | Instant                    | km/h (mph, m/s, knots) |
+| windSpeed_120m           | Instant                    | km/h (mph, m/s, knots) |
+| windSpeed_180m           | Instant                    | km/h (mph, m/s, knots) |
+| windDirection_10m        | Instant                    | °                      |
+| windDirection_80m        | Instant                    | °                      |
+| windDirection_120m       | Instant                    | °                      |
+| windDirection_180m       | Instant                    | °                      |
+| windGusts_10m            | Preceding hour max         | km/h (mph, m/s)        |
+| shortwaveRadiation       | Preceding hour mean W/m²   |                        |
+| directRadiation          | Preceding hour mean        | W/m²                   |
+| diffuseRadiation         | Preceding hour mean        | W/mv²                  |
+| vaporPressureDeficit     | Instant                    | kPa                    |
+| evapotranspiration       | Preceding hour sum         | mm (inch)              |
+| precipitation            | Preceding hour sum         | mm (inch)              |
+| precipitationProbability | Preceding hour probability | %                      |
+| hourlyWeatherCode        | Instant                    | WMO code               |
+| snowHeight               | Instant                    | meters                 |
+| freezingLevelHeight      | Instant                    | meters                 |
+| soilTemperature_0cm      | Instant                    | °C (°F)                |
+| soilTemperature_6cm      | Instant                    | °C (°F)                |
+| soilTemperature_18cm     | Instant                    | °C (°F)                |
+| soilTemperature_54cm     | Instant                    | °C (°F)                |
+| soilMoisture_0_1cm       | Instant                    | m³/m³                  |
+| soilMoisture_1_3cm       | Instant                    | m³/m³                  |
+| soilMoisture_3_9cm       | Instant                    | m³/m³                  |
+| soilMoisture_9_27cm      | Instant                    | m³/m³                  |
+| soilMoisture_27_81cm     | Instant                    | m³/m³                  |
+| allHourly                | -                          | -                      |
 
 Daily Functions:
 

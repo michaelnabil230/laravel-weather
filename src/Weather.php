@@ -12,7 +12,7 @@ use MichaelNabil230\Weather\Constants\Query;
 
 class Weather
 {
-    use Query, Daily, Hourly;
+    use Daily, Hourly, Query;
 
     public function __construct($latitude, $longitude)
     {

@@ -18,13 +18,13 @@
     "require": {
         "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16.4",
-        "illuminate/contracts": "^10.0||^11.0"
+        "illuminate/contracts": "v11.10.0"
     },
     "require-dev": {
         "larastan/larastan": "v2.9.7",
         "laravel/pint": "v1.16.0",
-        "nunomaduro/collision": "^8.1.1||^7.10.0",
-        "orchestra/testbench": "^9.0.0||^8.22.0",
+        "nunomaduro/collision": "v8.1.1",
+        "orchestra/testbench": "v9.1.2",
         "pestphp/pest": "v2.34.7",
         "pestphp/pest-plugin-arch": "v2.7.0",
         "pestphp/pest-plugin-laravel": "v2.4.0",

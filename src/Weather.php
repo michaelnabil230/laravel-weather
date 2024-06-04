@@ -5,6 +5,7 @@ namespace MichaelNabil230\Weather;
 use DateTime;
 use DateTimeZone;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;
 use MichaelNabil230\Weather\Constants\Daily;
 use MichaelNabil230\Weather\Constants\Hourly;
@@ -12,7 +13,7 @@ use MichaelNabil230\Weather\Constants\Query;
 
 class Weather
 {
-    use Daily, Hourly, Query;
+    use Daily, Hourly, Macroable, Query;
 
     public function __construct(float $latitude, float $longitude)
     {

@@ -14,7 +14,7 @@ use MichaelNabil230\Weather\Constants\Query;
 
 class Weather
 {
-    use Query, Daily, Hourly, Macroable, Minutely15;
+    use Daily, Hourly, Macroable, Minutely15, Query;
 
     public function __construct(float $latitude, float $longitude)
     {

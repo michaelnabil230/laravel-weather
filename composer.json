@@ -21,7 +21,7 @@
         "illuminate/contracts": "v11.10.0"
     },
     "require-dev": {
-        "larastan/larastan": "v2.9.7",
+        "larastan/larastan": "v2.9.8",
         "laravel/pint": "v1.16.1",
         "nunomaduro/collision": "v8.1.1",
         "orchestra/testbench": "v9.1.2",

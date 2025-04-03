@@ -2,6 +2,37 @@
 
 All notable changes to `laravel-weather` will be documented in this file.
 
+## v3.0.0 - 2025-04-03
+
+### What's Changed
+
+* Update pestphp/pest requirement from v2.34.7 to v2.34.8 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/16
+* Update laravel/pint requirement from v1.16.0 to v1.16.1 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/17
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/18
+* Update larastan/larastan requirement from v2.9.7 to v2.9.8 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/19
+* Update laravel/pint requirement from v1.16.1 to v1.16.2 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/20
+* Update pestphp/pest requirement from v2.34.8 to v2.34.9 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/21
+* Update nunomaduro/collision requirement from v8.1.1 to v8.3.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/22
+* Update laravel/pint requirement from v1.16.2 to v1.17.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/23
+* Update nunomaduro/collision requirement from v8.3.0 to v8.4.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/24
+* Update pestphp/pest requirement from v2.34.9 to v2.35.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/26
+* Update laravel/pint requirement from v1.17.0 to v1.17.1 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/25
+* Update laravel/pint requirement from v1.17.1 to v1.17.2 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/27
+* Update pestphp/pest requirement from v2.35.0 to v2.35.1 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/28
+* Update laravel/pint requirement from v1.17.2 to v1.17.3 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/29
+* Update laravel/pint requirement from v1.17.3 to v1.18.1 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/30
+* Update nunomaduro/collision requirement from v8.4.0 to v8.5.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/31
+* Update laravel/pint requirement from v1.18.1 to v1.18.2 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/32
+* Update laravel/pint requirement from v1.18.2 to v1.18.3 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/33
+* Update laravel/pint requirement from v1.18.3 to v1.19.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/34
+* Update laravel/pint requirement from v1.19.0 to v1.20.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/35
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/36
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/37
+* Update laravel/pint requirement from v1.20.0 to v1.21.0 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/38
+* Update laravel/pint requirement from v1.21.0 to v1.21.2 by @dependabot in https://github.com/michaelnabil230/laravel-weather/pull/39
+
+**Full Changelog**: https://github.com/michaelnabil230/laravel-weather/compare/v2.0.0...v3.0.0
+
 ## v2.0.0 - 2024-06-04
 
 ### What's Changed

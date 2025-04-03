@@ -1,6 +1,19 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Access to an undefined property object\\:\\:\\$current_weather\\.$#"
+			message: '#^Access to an undefined property object\:\:\$current_weather\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Commands/WeatherCommand.php
+
+		-
+			message: '#^Cannot access property \$temperature on mixed\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Commands/WeatherCommand.php
+
+		-
+			message: '#^Part \$weather\-\>current_weather\-\>temperature \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
 			count: 1
 			path: src/Commands/WeatherCommand.php

@@ -5,12 +5,12 @@ namespace MichaelNabil230\Weather\Constants;
 trait Query
 {
     /**
-     * @var array<string, mixed>
+     * @var array<array-key, mixed>
      */
     protected array $query = [];
 
     /**
-     * @param  array<string, mixed>  $query
+     * @param  array<array-key, mixed>  $query
      */
     public function withQuery(array $query): self
     {
